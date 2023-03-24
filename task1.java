@@ -11,11 +11,19 @@ public class task1 {
         Scanner iScanner = new Scanner(System.in);
         System.out.printf("Введите первое число: ");
         int i = iScanner.nextInt();
-        System.out.printf("Треугольное число: %d\n", giveMeNumber(i));
+        System.out.printf("Треугольное число: %d\n", triangular_number(i));
+        System.out.printf("Факториал числа: %d\n", factorial(i));
         iScanner.close();
     }
 
-    public static int giveMeNumber(int a) {
+    public static int triangular_number(int a) {
         return (a * (a + 1)) / 2;
+    }
+
+    public static int factorial(int a) {
+        if (a <= 2) {
+            return a;
+        }
+        return a * factorial(a - 1);
     }
 }
