@@ -11,11 +11,6 @@ import java.util.Scanner;
 
 public class task3 {
 
-    // static String scanOperations() {
-    //     Scanner scan = new Scanner(System.in);
-    //     String operations = scan.nextLine();
-    //     return operations;
-    // }
 
     static int getResult(char opr, int num1, int num2) {
         int result = 0;
